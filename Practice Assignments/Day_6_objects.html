@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object
+
+        //how to create an empty object:
+//first method:
+const student = {
+    name: "kalyani",
+    class: "BCA"
+};
+//Access all object
+console.log(student);
+console.log(typeof student);
+
+//second Method:
+const student1 = new Object();
+student1.name = "Ganesh";
+
+//access object property
+console.log(student1.name);
+
+
+
+//Add new property
+student.roll ="ABC123";
+console.log(student);
+
+//Update object property
+student.name ="somesh";
+console.log(student);
+
+// delete property
+delete student.roll;
+console.log(student);
+
+// multiple object
+
+let college = {
+    student1 : {name : "Ganesh", class : "BCA",
+                education: {}}
+}
+    </script>
+</body>
+</html>

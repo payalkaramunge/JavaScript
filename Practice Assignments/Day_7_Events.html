@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS Assignment</title>
+</head>
+<body>
+    <button onclick="chnagebg()">change button</button>
+
+    <!-- for option, dropdown use label -->
+    <label for=""> Select Color</label>
+    <select name="" id="color" onchange="bodybg(this.value)">
+        <option value="Red">Red</option>
+        <option value="pink">pink</option>
+        <option value="blue">blur</option>
+        <option value="black">black</option>
+        <option value="green">green</option>
+    </select>
+
+    <!-- taking value fron user -->
+    <label for=""> Select age</label>
+    <input type="range" min=""18 max = "50" onchange="getAge(this.value)">
+    <samp id="myage"> </samp>
+
+    <!-- filter img -->
+    <img src="../../../INTERNSHIP with PerDrag/IMG/boy with bag.webp" alt="alert" width="300" id="img">
+    <input type="range" min="0" max="100" onchange="imgopr(this.value)">
+    <form action=""></form>
+
+    <script>
+        function chnagebg()
+        {
+            // alert("hello")
+
+            // it will change background
+            document.body.style.backgroundColor = "hotpink";
+        }
+
+                // how to choose bg color  <!-- for option, dropdown use label -->
+                function bodybg()
+                {
+                    let color = document.getElementById("color").Value;
+                    
+                    // alert(color);
+                    document.body.style.backgroundColor = color;
+                }
+
+                        // <!-- taking value fron user -->
+                        function getAge()
+                        {
+                            document.getElementById("myage").innerHTML = age;
+                        }
+
+                            // <!-- filter img -->
+                            function imgopr(val)
+                            {
+                                let img
+                            }
+
+       
+    </script>
+</body>
+</html>

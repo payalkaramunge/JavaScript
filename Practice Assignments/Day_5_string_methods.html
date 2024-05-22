@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1= "predrag academy";
+        //upper case
+        console.log(str1.toUpperCase());
+        let str2="predrag academy";
+        console.log(str2.toLowerCase());
+        //string reverse
+        let str3 = str1.split("");
+        console.log( str3);
+        //we can reverse the array
+        let tostr=str3.reverse().join("");
+        console.log(tostr);
+
+
+        // sum of string
+        let num="1,4,5,7";
+        let a= num.split(",");
+        let sum=0;
+        for(i=0;i<a.length;i++){
+            sum+=parseInt(a[i]);
+        }
+        console.log(sum);
+
+        // return specific char of given index
+        console.log(str1.charAt(2));
+
+        // concat two string
+        let city = " ,nanded";
+        console.log(str1 + city);
+        console.log(str1.concat(city));
+
+
+        // return index of given first Occurance string
+        console.log(str1.indexOf("academy"));
+
+        // return index of given last Occurance string
+        console.log(str1.lastIndexOf("academy"));
+
+        //count of all char of string
+        console.log(str1.length);
+
+        // Replace string
+        console.log(str1.replace("academy","system"));
+        console.log(str1.replaceAll("academy","system"))
+
+        // remove white spaces
+        console.log(str1.trim());
+
+        // check string contain
+        let email = "predrag@gmail.com";
+        console.log(email.includes("@"));
+
+        // if we have to bloc perticular domain
+        let email1 = "predrag@gmail.com";
+        if(!email1.includes("gmail.com"))
+        {
+            console.log("Mail Accepterd");
+        }
+        else 
+        {
+            console.log("Personal Mail not Accepterd");
+        }
+
+
+        // check string start with and end with.
+        let str4 = "welcome to nanded";
+        console.log(str4.startsWith("welcome"));
+        console.log(str4.startsWith("wel"));
+        console.log(str4.endsWith("welcome"));
+        console.log(str4.endsWith("ded"));
+
+
+        // repeat string
+        console.log(str4.repeat( 3));
+
+        // special case
+
+        let contact = "2348";
+        console.log(contact.padStart(10,"*"));
+        console.log(contact.padEnd(10,"*"));
+
+        // extract String
+        let str5 = "welcome to nanded";
+        console.log(str5.slice(3,9));
+
+      
+    </script>
+</body>
+</html>
