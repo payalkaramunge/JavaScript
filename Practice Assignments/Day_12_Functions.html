@@ -56,6 +56,34 @@
         }
             console.log( add2(10,12));
 
+
+        // scope:
+
+            // 1.Functional scope
+                let x=100;
+                // global scope
+                function add3(a,b)
+                {
+                    let x = "hi";
+                    console.log(x);
+                    // local scope
+                }
+
+                console.log(x);
+                add3();
+
+            // 2.block scope
+            {
+                var x2 = 300;
+                let x1 = 200;
+            }
+            console.log(x2);
+            console.log(x1);
+
+            // 3.lexical scope
+
+
+
     </script>
 </body>
 </html>
