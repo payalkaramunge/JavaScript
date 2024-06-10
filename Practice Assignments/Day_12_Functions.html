@@ -86,7 +86,56 @@
 
 
 
-            
+            // call back function or higher order function
+
+            const fun = function(func , count)
+            {
+                for(i=1;i<=count;i++)
+                func();
+            }
+
+            function print()
+            {
+                console.log("hi");
+            }
+            func(print,5);
+
+
+
+            // even odd by function
+
+        const oddEvenDetector = function(req) 
+        {
+            if(req === "odd") 
+            { // Correct condition to handle "odd" request
+                const odd = function(a) {
+                    if(a % 2 !== 0) { // Corrected condition to check for odd numbers
+                        console.log("ok");
+                    }
+                }
+                return odd;
+            } 
+            else if(req === "even") 
+            {
+                const even = function(a) {
+                    if(a % 2 === 0) { // Condition is correct for even numbers
+                        console.log("ok");
+                    }
+                }
+                return even;
+            } 
+            else 
+            {
+                console.log("invalid");
+            }
+        }
+
+        const request = "odd";
+        const checker = oddEvenDetector(request); // Store the function returned by oddEvenDetector
+        if (checker) { // Ensure checker is not undefined
+            checker(3); // Call the function with a number to check
+        }
+
     </script>
 </body>
 </html>
