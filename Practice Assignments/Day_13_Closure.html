@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="">
+    Welcome to js
+<br>
+    <button id="btn1">Red</button>
+    <button id="btn2">Green</button>
+    <button id="btn3">Blue</button>
+    
+    <script>
+      console.log("Hello");
+
+      // symbol is a primitive datatype
+      // symbol is unique in every condition
+
+    //   let symbl1 = Symbol("symbl1");
+
+
+    //   Obj = {
+    //     name: "changu",
+    //     age: 24,
+    //     [symbl1]: 56,
+    //   }
+
+    //   for (const key in obj) {
+    //     console.log(key);
+    //   }
+
+    // closure
+
+    const red = document.getElementById('btn1')
+    const green = document.getElementById('btn2')
+    const blue = document.getElementById('btn3')
+
+        function fun(color) {
+
+            function fun2() {
+                document.body.style.backgroundColor = color;
+
+            }
+            return fun2;
+        }
+
+        const returned = fun("Red")
+        const returned1 = fun("Green")
+        const returned2 = fun("Blue")
+
+        red.addEventListener('click', ()=> {
+            returned()
+        })
+        green.addEventListener('click', ()=> {
+            returned1()
+        })
+        blue.addEventListener('click', ()=> {
+            returned2()
+        })
+
+
+
+
+    </script>
+  </body>
+</html>
